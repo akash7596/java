@@ -1,7 +1,7 @@
 public class HallowDiamond {
     public static void main(String[] args) {
-        int n = 5;
-        int sp = n - 1;
+        int n = 13;
+        int sp = n /2;
         int st = 1;
 
         for (int i = 1; i <= n; i++) {
@@ -15,7 +15,7 @@ public class HallowDiamond {
             }
 
             System.out.println();
-            if (i < n) {
+            if (i <= n/2) {
                 sp--;
                 st += 2;
             } else {
