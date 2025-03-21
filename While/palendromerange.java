@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+class FirstThreePalindromes {
+    // Function to check if a number is a palindrome
+    public static boolean isPalindrome(int num) {
+        int temp = num, reverse = 0;
+        while (temp > 0) {
+            int digit = temp % 10;
+            reverse = (reverse * 10) + digit;
+            temp /= 10;
+        }
+        return num == reverse;
+    }
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Enter the start of the range:");
+        int start = scn.nextInt();
+        System.out.println("Enter the end of the range:");
+        int end = scn.nextInt();
+        scn.close();
+
+        int count = 0;  // To track the number of palindromes found
+
+        System.out.println("First three palindrome numbers in the given range:");
+        for (int i = start; i <= end; i++) {
+            if (isPalindrome(i)) {
+                System.out.print(i + " ");
+                count++;
+                if (count == 3) { // Stop after finding three palindrome numbers
+                    break;
+                }
+            }
+        }
+        
+        // If less than 3 palindromes are found
+        if (count == 0) {
+            System.out.println("No palindromes found in the given range.");
+        } else if (count < 3) {
+            System.out.println("\nOnly " + count + " palindrome(s) found in the given range.");
+        }
+    }
+}

@@ -1,0 +1,20 @@
+class B 
+{
+	static int m1()
+		{
+			System.out.println("Executing m1");
+			return 10;
+		}
+	public static void main(String[] args) 
+	{
+		m1();
+		System.out.println("-------------");
+		int i= m1();
+		System.out.println("i="+i);
+		System.out.println("-------------");
+		int j=m1()*3;
+		System.out.println("j="+j);
+		System.out.println("-------------");
+		System.out.println(m1());
+	}
+}

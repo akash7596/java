@@ -1,0 +1,18 @@
+class Bitwise
+{
+	public static void main(String[] args) 
+	{
+	int a=-57;
+	int b=76;
+
+	int c=a&b; //AND
+	int d=a|b; //OR
+	int e=a^b; //zOR
+	int f=~b; //NOT
+
+	System.out.println(c);
+	System.out.println(d);
+	System.out.println(e);
+	System.out.println(f);
+	}
+}

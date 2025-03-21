@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class C
+{
+	public static void main (String[] args)
+		{
+		Scanner scn = new Scanner(System.in);
+		int x=scn.nextInt();
+		//int y=scn.nextInt();
+	
+		
+		for (int i=1;i<=x ;i++ )
+		{
+			char c ='A';
+
+			for (int j=1;j<=x ;j++ )
+			{
+				if (i==1 || j==1 || i==x || j==x)
+				{
+					System.out.print(j+" ");
+				}
+				else
+					{
+					System.out.print(c+" ");
+					 
+				     }c++;
+				} 
+			System.out.println();
+		}
+		}
+}

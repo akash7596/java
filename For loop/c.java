@@ -1,0 +1,14 @@
+class C
+{
+    public static void main(String[] args) 
+    {
+        int i=0;
+        for (i=1; i<=40; i++)  // Loop starts from i = 1
+        {
+            System.out.println(i); // Print i
+            i = i + i;  // Update i by adding its own value (i = i + i)
+        }
+        System.out.println("----------");
+        System.out.println(i); // Print final value of i after loop ends
+    }
+}

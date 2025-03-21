@@ -1,0 +1,20 @@
+// Sum of 1 to n natural number. 
+
+import java.util.Scanner;
+class Sum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scn=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int n=scn.nextInt();
+
+		int sum=0;
+
+			for (int i=1;i<=n ;i++ )
+			{
+				sum+=i;
+			}
+			System.out.println(sum);
+	}
+}
